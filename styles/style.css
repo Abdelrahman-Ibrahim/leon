@@ -13,8 +13,6 @@ body{
     margin: 0 auto;
 }
 
-
-
 /* Small Screens */
 @media (min-width: 768px) {
     .container{
@@ -34,4 +32,46 @@ body{
     .container{
         width: 1140px;
     }
+}
+
+
+/* Header styles */
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header #logo{
+    width: 60px;
+}
+header nav .icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 25px;
+    cursor: pointer;
+}
+
+header  nav .icon:hover  span:nth-child(2){
+    width: 100%;
+}
+header  nav .icon span{
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 4px;
+}
+header nav .icon span:first-child{
+    width: 100%;
+}
+header nav .icon span:nth-child(2){
+    width: 50%;
+    transition: 0.3s ease-in-out;
+}
+header nav .icon span:last-child{
+    width: 100%;
+}
+
+header nav ul{
+    display: none;
+    position: relative;
 }
