@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;800&display=swap');
 
+:root{
+    --main-color: #10cab7;
+}
+
+
 *{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -39,6 +44,9 @@ body{
 
 
 /* Header styles */
+header{
+    padding: 20px;
+}
 header .container{
     display: flex;
     justify-content: space-between;
@@ -82,6 +90,7 @@ header  nav span.icon:hover  span:nth-child(2){
 }
 
 header nav ul{
+    background-color: #f9f9f9e0;
     display: none;
     position: absolute;
     list-style: none;
@@ -89,7 +98,6 @@ header nav ul{
     right: 0;
     top: calc(100% + 10px);
     min-width: 200px;
-    background-color: #e9e9e970;
 }
 header nav ul::before{
     content: '';
@@ -113,4 +121,28 @@ header nav ul li a:hover{
 }
 header nav ul li:not(:last-child){
     border-bottom: 1px solid #ddd;
+}
+
+section.landing{
+    background-image: url(../images/landing-bg.jpg);
+    background-size: cover;
+    height: calc(100vh - 64px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.landing .hero-headline{
+    text-align: center;
+    min-width: 200px;
+    max-width: 100%;
+}
+section.landing .hero-headline h1{
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: 50px;
+    margin: 0;
+}
+section.landing .hero-headline p{
+    font-size: 18px;
+    line-height: 2;
 }
