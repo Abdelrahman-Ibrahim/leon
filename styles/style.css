@@ -2,6 +2,7 @@
 
 :root{
     --main-color: #10cab7;
+    --line-height-regular : 2;
 }
 
 
@@ -144,5 +145,34 @@ section.landing .hero-headline h1{
 }
 section.landing .hero-headline p{
     font-size: 18px;
-    line-height: 2;
+    line-height: var(--line-height-regular);
 }
+
+section.features{
+    background-color: #f6f6f6;
+    padding: 20px 0;
+}
+/* Start Features Section */
+section.features .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+section.features .feature{
+    text-align: center;
+}
+
+section.features .feature i{
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+section.features .feature h3{
+    font-weight: 800;
+}
+section.features .feature p{
+    line-height: var(--line-height-regular);
+}
+
+/* End Features Section */
