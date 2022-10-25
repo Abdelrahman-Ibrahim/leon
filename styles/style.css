@@ -4,6 +4,8 @@
     --main-color: #10cab7;
     --secondery-color: #2c4755;
     --line-height-regular : 2;
+    --section-pad: 60px;
+    --section-bg: #f6f6f6;
 }
 
 
@@ -168,7 +170,7 @@ section.landing .hero-headline p{
 }
 
 section.features{
-    background-color: #f6f6f6;
+    background-color: var(--section-bg);
     padding: 20px 0;
 }
 /* Start Features Section */
@@ -199,7 +201,7 @@ section.features .feature p{
 
 /* Start Services Section */
 section.services{
-    padding: 20px 0;
+    padding: var(--section-pad) 0;
 }
 
 section.services .services-content{
@@ -264,3 +266,38 @@ section.services .image img{
     }
 }
 /* End Services Section */
+
+
+/* Start Portfolio Section */
+section.portfolio{
+    padding: var(--section-pad) 0;
+    background-color: var(--section-bg);
+}
+
+section.portfolio .portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 50px;   
+}
+section.portfolio .portfolio-content .card{
+    background-color: white;
+}
+
+section.portfolio .portfolio-content img{
+    width: 100%;
+
+}
+section.portfolio .portfolio-content h3{
+    /* margin-bottom: 10px; */
+}
+section.portfolio .portfolio-content .text-block{
+    /* margin-top: 30px; */
+    padding: 20px;
+}
+section.portfolio .portfolio-content p{
+    line-height: var(--line-height-regular);
+    color: #444;
+    padding: 10px 0;
+}
+/* End Portfolio Section */
