@@ -171,7 +171,7 @@ section.landing .hero-headline p{
 
 section.features{
     background-color: var(--section-bg);
-    padding: 20px 0;
+    padding: var(--section-pad) 0;
 }
 /* Start Features Section */
 section.features .container{
@@ -286,13 +286,8 @@ section.portfolio .portfolio-content .card{
 
 section.portfolio .portfolio-content img{
     width: 100%;
-
-}
-section.portfolio .portfolio-content h3{
-    /* margin-bottom: 10px; */
 }
 section.portfolio .portfolio-content .text-block{
-    /* margin-top: 30px; */
     padding: 20px;
 }
 section.portfolio .portfolio-content p{
@@ -301,3 +296,79 @@ section.portfolio .portfolio-content p{
     padding: 10px 0;
 }
 /* End Portfolio Section */
+
+/* Start About Section */
+section.about{
+    padding: var(--section-pad) 0;
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.about .about-content .image{
+    width: 380px;
+    height: 450px;
+    position: relative;
+}
+.about .about-content .image::before{
+    content: "";
+    width: 100px;
+    height: 120%;
+    background-color: #2C4755;
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    z-index: -1;
+}
+.about .about-content .image::after{
+    content: "";
+    position: absolute;
+    border-left: 70px solid var(--main-color);
+    border-bottom: 70px solid var(--main-color);
+    width: 150px;
+    height: 300PX;
+    right: -100px;
+    z-index: -1;
+    top: -50px;
+}
+.about .about-content .image img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.about .about-content .text-block{
+    flex-basis: calc(100% - 500px);
+}
+
+.about .about-content .text-block p:first-of-type{
+    font-weight: bold;
+    line-height: var(--line-height-regular);
+}
+
+.about .about-content .text-block hr{
+    border-color: var(--main-color);
+    width: 80%;
+    margin: 30px 0;
+}
+
+.about .about-content .text-block p:last-of-type{
+    color: #777;
+    line-height: var(--line-height-regular);
+}
+
+@media (max-width: 991px) {
+    .about .about-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about .about-content .image{
+        margin: 0 auto 100px;
+    }
+    .about .about-content .image::before,
+    .about .about-content .image::after{
+        display: none;
+    }
+}
+
+/* End About Section */
