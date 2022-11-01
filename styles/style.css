@@ -372,3 +372,53 @@ section.about{
 }
 
 /* End About Section */
+
+/* Start Contact Section */
+section.contact{
+    padding: var(--section-pad) 0;
+    background-color: var(--section-bg);
+}
+
+section.contact .contact-content{
+    padding: var(--section-pad) 0;
+    text-align: center;
+    width: 50%;
+}
+
+section.contact .contact-content p{
+    font-size: 42px;
+    font-weight: bolder;
+    color: var(--secondery-color);
+    letter-spacing: -3px;
+    margin-bottom: 10px;
+}
+
+section.contact .contact-content a{
+    font-size: 42px;
+    font-weight: bolder;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+section.contact .contact-content .social{
+    margin-top: 15px;
+}
+section.contact .contact-content .social i{
+    color: var(--secondery-color);
+    margin-left: 10px;
+}
+
+
+@media (max-width: 1199px) {
+    section.contact .contact-content{
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    section.contact .contact-content p,
+    section.contact .contact-content a{
+        font-size: 30px;
+    }
+}
+/* End Contact Section */
