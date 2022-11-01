@@ -422,3 +422,21 @@ section.contact .contact-content .social i{
     }
 }
 /* End Contact Section */
+
+
+/* Start Footer Section */
+footer{
+    padding: 30px 10px;
+    background-color: var(--secondery-color);
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+footer span{
+    color: var(--main-color);
+}
+
+
+/* End Footer Section */
